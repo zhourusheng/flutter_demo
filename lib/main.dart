@@ -1,19 +1,24 @@
 import 'package:flutter/material.dart';
 
-/**
- * bottomNavigation 底部导航条
- *   */ 
-import 'bottom_navigation_widget.dart';
+// bottomNavigation 底部导航条
+// import 'bottom_navigation_widget.dart';
 
+// 不规则底部工具栏
+import 'bottom_appBar_demo.dart';
 
+void main()=>runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter bottomNavigationBar',
-      theme: ThemeData.light(),
-      home: BottomNavigationWidget()
+      title: 'Flutter Demo',
+      // theme: ThemeData.light(),
+      // home: BottomNavigationWidget()
+      theme: ThemeData(
+        primarySwatch: Colors.lightBlue
+      ),
+      home: BottomAppBarDemo(),
     );
   }
 }
@@ -53,7 +58,3 @@ class MyApp extends StatelessWidget {
 //     );
 //   }
 // }
-
-
-
-Future main() async => runApp(new MyApp());
