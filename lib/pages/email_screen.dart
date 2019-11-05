@@ -8,7 +8,19 @@ class EmailScreen extends StatelessWidget {
         title: Text('Email'),
       ),
       body: Center(
-        child: Text('Email'),
+        child: Container(
+          child: new Image.network(
+            'https://jspang.com/images/next_blog.jpg',
+            // scale: 1.0,
+            // fit: BoxFit.cover,
+            // color: Colors.greenAccent,
+            // colorBlendMode: BlendMode.darken,
+            repeat: ImageRepeat.repeat,
+          ),
+          width: 300.0,
+          height: 200.0,
+          // color: Colors.lightBlue,
+        ),
       ),
     );
   }
