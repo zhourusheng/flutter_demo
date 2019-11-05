@@ -4,17 +4,18 @@ import 'pages/email_screen.dart';
 import 'pages/pages_screen.dart';
 import 'pages/airplay_screen.dart';
 
-
+// StatefulWidget具有可变状态(state)的窗口组件（widget）。使用这个要根据变化状态，调整State值
 class BottomNavigationWidget extends StatefulWidget {
   @override
   _BottomNavigationWidgetState createState() => _BottomNavigationWidgetState();
 }
 
 class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
-  final _BottomNavigationColor = Colors.blue;
+  final bottomNavigationColor = Colors.blue;
   int _currentIndex = 0;
   List<Widget> list = List();
 
+  // 重写 initState() 方法
   @override
   void initState(){
     list
@@ -34,45 +35,46 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
           BottomNavigationBarItem(
             icon: Icon(
               Icons.home,
-              color: _BottomNavigationColor,
+              color: bottomNavigationColor,
             ),
             title: Text(
               'Home',
-              style: TextStyle(color: _BottomNavigationColor)
+              style: TextStyle(color: bottomNavigationColor)
             )
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.email,
-              color: _BottomNavigationColor,
+              color: bottomNavigationColor,
             ),
             title: Text(
               'Email',
-              style: TextStyle(color: _BottomNavigationColor)
+              style: TextStyle(color: bottomNavigationColor)
             )
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.pages,
-              color: _BottomNavigationColor,
+              color: bottomNavigationColor,
             ),
             title: Text(
               'Pages',
-              style: TextStyle(color: _BottomNavigationColor)
+              style: TextStyle(color: bottomNavigationColor)
             )
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.airplay,
-              color: _BottomNavigationColor,
+              color: bottomNavigationColor,
             ),
             title: Text(
               'AriPlay',
-              style: TextStyle(color: _BottomNavigationColor)
+              style: TextStyle(color: bottomNavigationColor)
             )
           ),
         ],
         currentIndex: _currentIndex,
+        // onTap() 事件，默认参数是 index值
         onTap: (int index) {
           setState(() {
             _currentIndex = index;            

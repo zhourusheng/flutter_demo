@@ -80,7 +80,7 @@ class LoginPageState extends State<LoginPage>
                         color: Colors.green,
                         splashColor: Colors.teal,
                         textColor: Colors.white,
-                        child: new Icon(FontAwesomeIcons.signInAlt),
+                        // child: new Icon(FontAwesomeIcons.signInAlt),
                         onPressed: () {},
                       )
                     ],

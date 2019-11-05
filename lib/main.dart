@@ -18,9 +18,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-/**
- * appBar顶部导航条
- *   */ 
+// appBar顶部导航条
 // class MyApp extends StatelessWidget {
 //   var titleList = ['NEWS','LABS'];
 //   @override
