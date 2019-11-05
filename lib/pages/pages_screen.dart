@@ -8,7 +8,30 @@ class PagesScreen extends StatelessWidget {
         title: Text('Pages'),
       ),
       body: Center(
-        child: Text('Pages'),
+        child: Container(
+          height: 200.0,
+          child: new ListView(
+            scrollDirection: Axis.horizontal,
+            children: <Widget>[
+              new Container(
+                width:180.0,
+                color: Colors.lightBlue,
+              ),
+              new Container(
+                width:180.0,
+                color: Colors.amber,
+              ),
+              new Container(
+                width:180.0,
+                color: Colors.deepOrange,
+              ),
+              new Container(
+                width:180.0,
+                color: Colors.deepPurpleAccent,
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
