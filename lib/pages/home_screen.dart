@@ -10,7 +10,7 @@ class HomeScreen extends StatelessWidget {
       body: Center(
         child: Container(
           child: Text(
-            'Home2222, 非常喜欢前端，并且愿意为此奋斗一生。我希望可以出1000集免费教程。',
+            'Home2222',
             textAlign: TextAlign.center,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
@@ -21,11 +21,21 @@ class HomeScreen extends StatelessWidget {
               decorationStyle: TextDecorationStyle.solid
             ),
           ),
-          alignment: Alignment.center,
+          alignment: Alignment.topLeft,
           width: 500.0,
           height: 400.0,
-          color: Colors.lightBlue,
-          padding: EdgeInsets.all(10.0),
+          // color: Colors.lightBlue,
+          padding: EdgeInsets.fromLTRB(50.0, 10.0, 0.0, 0.0),
+          margin: EdgeInsets.all(50.0),
+          decoration: new BoxDecoration(
+            gradient: LinearGradient(
+              colors:[Colors.lightBlue, Colors.greenAccent, Colors.purple]
+            ),
+            border: Border.all(
+              width: 2.0,
+              color: Colors.red
+            )
+          ),
         )
       ),
     );
