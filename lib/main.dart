@@ -2,6 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 
+import 'bottom_navigation_widget.dart';
+
 
 // main函数使用了(=>)符号, 这是Dart中单行函数或方法的简写
 void main()=>runApp(new MyApp());
@@ -11,13 +13,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Startup Name Generator',
-      home: new RandomWords(),
+      // home: new RandomWords(),
+      home: BottomNavigationWidget(),
     );
   }
 }
 
 // 添加一个 有状态的部件 (StatefulWidget)
-
 class RandomWords extends StatefulWidget {
   @override
   createState() => new RandomWordsState();
